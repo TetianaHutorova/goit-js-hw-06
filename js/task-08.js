@@ -10,7 +10,10 @@ function handlerMakeForm(event) {
   if (email.value === "" || password.value === "") {
     return alert("Please fill in all the fields!");
   }
-
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  console.log({
+    email: email.value,
+    password: password.value,
+  });
+ 
   event.currentTarget.reset();
 }
