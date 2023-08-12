@@ -14,7 +14,7 @@ function handlerCheckValue() {
     refs.input.value < Number(refs.input.min) ||
     refs.input.value > Number(refs.input.max)
   ) {
-    alert(`Введите число от ${refs.input.min} до ${refs.input.max}`);
+    alert(`Enter a number from ${refs.input.min} to ${refs.input.max}`);
   } else {
     createBoxes(refs.input.value);
   }
